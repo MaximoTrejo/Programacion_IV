@@ -1,0 +1,30 @@
+<table>
+    <thead>
+
+        <tr>
+            <th>legajo</th>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>acciones</th>
+
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <!-- al es como la variable que solo tiene 1 alumno, listado es la lista de todos los alimnos, y el track es una de las variables, siempre usar algun id -->
+        <!-- el listadoHijo lo tengo que llamar como metodo es solo sintaxis, es la misma lista pero lo llamo como metodo-->
+        @for(al of listadoHijo(); track al.legajo ){
+            <tr>
+                <td>{{al.legajo}}</td>
+                <td>{{al.nombre}}</td>
+                <td>{{al.apellido}}</td>
+                <td><button class="btn btn-info" (click)="verDetalle(al)"> ver detalle</button></td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>

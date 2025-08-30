@@ -1,0 +1,15 @@
+<section class="container">
+
+    <h1>Alumnos</h1>
+    <hr />
+    
+    <!-- aca le mandas la variable con los datos, esto solo sirve para mandar variables/informacion entre componentes-->
+    <app-listado-alumnos   [listadoHijo]="listado"  (envioDeAlumno)="verdetalleFinal($event)"></app-listado-alumnos>
+
+    <hr />
+
+    <app-agregar-alumnos (enviodealumno)="this.agregar($event)"></app-agregar-alumnos>
+
+    <app-detalle-alumnos [alumno]="alumno"></app-detalle-alumnos>
+
+</section>

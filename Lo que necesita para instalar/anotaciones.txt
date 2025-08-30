@@ -1,0 +1,47 @@
+porque angular 
+Es desarrolado por google 
+
+
+Framework
+nees (back)
+angular(from)
+
+comandos para ver version angular 
+ng -version
+
+comando para ver la version node
+node -v
+
+solucionar este error 
+npm : No se puede cargar el archivo C:\Program Files\nodejs\npm.ps1 porque la ejecución de scripts está deshabilitada en este sistema. Para obtener más 
+información, consulta el tema about_Execution_Policies en https:/go.microsoft.com/fwlink/?LinkID=135170.
+En línea: 1 Carácter: 1
++ npm install -g @angular/cli
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+--esto todo en powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+crear nuevo proyecto 
+ng new <project-name>
+
+
+la definicion de las variables siempre es 
+const nombre: tipo = valor 
+
+any es el tipo de dato cualquiera
+
+
+levantar el proyecto
+ng serve 
+
+Extencion recomendada
+Angular Language Service
+
+
+crear componentes
+ng g c bienvenida
+

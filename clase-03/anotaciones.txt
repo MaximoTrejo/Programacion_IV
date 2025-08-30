@@ -1,0 +1,5 @@
+crea una clase
+ng g class clases/persona
+
+crea un servicio
+ng g s service/auth

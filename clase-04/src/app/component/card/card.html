@@ -1,0 +1,13 @@
+@if(card(); as c){
+    <div class =card>
+    <img [src]="c.imagen">
+
+    <H1>{{c.titulo}}</H1>
+    <p>{{c.desc}}</p>
+
+    <br />
+
+    <a [routerLink]="c.url">{{c.textUrl}}</a>
+
+</div>
+}

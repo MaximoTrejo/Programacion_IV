@@ -1,0 +1,12 @@
+carga diferida es cuando no se carga todo junto y solo se carga lo que se usa 
+ejemplo si no entras al login no lo carga
+
+
+coolback -- enfriamiento
+
+ngoninit (se instancia el componente usuarios)
+
+ngondestroy (se destruye el componente usuarios)
+
+instalar bootstrap
+ng add @ng-bootstrap/ng-bootstrap

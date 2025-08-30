@@ -1,0 +1,24 @@
+<p>usuarios works!</p>
+
+<p>usuario actual {{usuarioActual}}</p>
+
+<!--sentencias-->
+<!-- if / else - for - switch -->
+
+<!--Se puede hacer codigo TS en el html usando el @-->
+
+<p>hay {{usuarios.length}} usuarios</p>
+
+@if(usuarios.length >=3){
+    <p>hay mas de 2 usuarios</p>
+}@else{
+    <p>hay pocos usuarios</p>
+}
+
+<p>{{usuarios.length > 2 ? "hay muchos" : "hay pocos"}}</p>
+
+@for (usr of usuarios; track usr.nombre; let i= $index){
+    <div>
+        <p>{{i}}- Usuario : {{usr.perfil}} -- {{usr.nombre}}</p>
+    </div>
+}

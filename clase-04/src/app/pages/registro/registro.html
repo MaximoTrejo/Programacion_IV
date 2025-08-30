@@ -1,0 +1,58 @@
+<h1>Registro</h1>
+
+<hr>
+
+<section>
+
+    
+<form class="card"  [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+    
+<div>
+
+<div>
+
+        <label for="nombre">nombre</label>
+        <input type="text"  id="nombre" name="nombre" formControlName="nombre">
+        @if (formulario.controls.nombre.errors !== null) {
+            @if (formulario.controls.nombre.errors['required'] && formulario.controls.nombre.touched) {
+
+                <small class="error">el nombre el requerido</small>
+            }
+             
+        }
+    
+    </div>
+
+    <div>
+
+        <label for="apellido">apellido</label>
+        <input type="text" id="apellido" name="apellido" formControlName="apellido">
+
+    </div>
+
+    <div>
+
+        <label for="correo">correo</label>
+        <input type="mail" id="correo" name="correo" formControlName="correo">
+
+    </div>
+    <div>
+
+        <label for="contrasenia">nombre</label>
+        <input type="text" id="contrasenia" name="contrasenia" formControlName="contrasenia">
+
+    </div>
+    <div>
+
+        <label for="repetirContrasenia">Repetir Contraseña:</label>
+        <input type="text" id="repetirContrasenia" name="repetirContrasenia" formControlName="repetirContrasenia">
+
+    </div>
+
+    <button class="btn btn-dark" type="submit" [disabled]="!this.formulario.valid"> enviar</button>
+
+</div>
+</form>
+</section>
+
+
