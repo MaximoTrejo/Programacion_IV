@@ -1,0 +1,7 @@
+clave supabase
+Maximo1603
+
+instalar supabase
+npm install @supabase/supabase-js
+
+
