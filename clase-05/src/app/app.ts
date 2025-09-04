@@ -16,10 +16,18 @@ export class App {
   email ='';
   contrasenia='';
 
-  authService = inject(Auth);
+  protected authService = inject(Auth);
 
   crearCuenta(){
     this.authService.crearCuenta(this.email,this.contrasenia);
+  }
+
+  iniciarSesion(){
+    this.authService.iniciarSesion(this.email,this.contrasenia);
+  }
+
+  cerrarSesion(){
+    this.authService.cerrarSesion();
   }
 
 }

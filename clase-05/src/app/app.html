@@ -1,7 +1,23 @@
-<h1>iniciar sesion</h1>
+<nav class ="d-flex justify-content-center">
+
+  @if (authService.usuarioActual()) {
+    <button>Juegos</button>
+  <button>Quién Soy</button>
+  <button (click)="cerrarSesion()">cerrar sesion</button>
+  }@else{
+    <button>registro</button>
+   <button>iniciarSesion</button>
+
+  }
+
+</nav>
+
+
+<h1>formularios</h1>
 
 <input [(ngModel)]="email">
 <input [(ngModel)]="contrasenia">
 
 <button (click)="crearCuenta()">crear cuenta</button>
+<button (click)="iniciarSesion()">iniciar sesion</button>
 <router-outlet />

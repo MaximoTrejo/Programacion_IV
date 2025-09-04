@@ -5,3 +5,10 @@ instalar supabase
 npm install @supabase/supabase-js
 
 
+//para mensajes de error
+npm install sweetalert2
+
+
+//para mas mensajes de error pero en la esquina
+https://ngx-toastr.vercel.app/
+
