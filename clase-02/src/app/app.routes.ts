@@ -33,5 +33,6 @@ export const routes: Routes = [
     //para pasar parametros a las rutas
     {path: "usuarios/:id",loadComponent: () => import("./pages/usuarios/usuarios").then((module)=> module.Usuarios)},
 
-    {path: "***",component: Error}, //otra forma es redirecTo: 'bienvenida'
+    
+     //otra forma es redirecTo: 'bienvenida'
 ];

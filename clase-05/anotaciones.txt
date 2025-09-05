@@ -6,6 +6,7 @@ npm install @supabase/supabase-js
 
 
 //para mensajes de error
+https://sweetalert2.github.io/
 npm install sweetalert2
 
 
