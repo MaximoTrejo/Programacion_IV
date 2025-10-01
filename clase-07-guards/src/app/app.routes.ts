@@ -11,13 +11,13 @@ import { noestaLogueadoGuard } from './guards/noesta-logueado-guard';
 
 export const routes: Routes = [
 
-    
-    {path: "home",component: Home,},//url
-        {path: "login",component: Login,},
-        {path: "registro",component: Registro,},
-        {path: "juegos",component: Juegos,canActivate: [estaLogueadoGuard]},
-        {path: "admin",component: Admin},
-    {path: "**",component: Error, pathMatch:"full"},    {
+
+  { path: "home", component: Home, },//url
+  { path: "login", component: Login, },
+  { path: "registro", component: Registro, },
+  { path: "juegos", component: Juegos, canActivate: [estaLogueadoGuard] },
+  { path: "admin", component: Admin },
+  { path: "**", component: Error, pathMatch: "full" }, {
     path: '',
     component: Home,
   },

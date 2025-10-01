@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class Auth {
 
-   public user: null | any;
-
+  public user: null | any;
   public admin: boolean = false;
 
   // login() {}

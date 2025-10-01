@@ -1,5 +1,5 @@
 /* agrego el input */
-import { Component, input ,output} from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Persona } from '../../clases/persona';
 
 @Component({
@@ -11,10 +11,10 @@ import { Persona } from '../../clases/persona';
 export class ListadoAlumnos {
 
 
-/*  input -> entrada -> recibe datos desde un componente padre*/ 
+  /*  input -> entrada -> recibe datos desde un componente padre*/
 
-listadoHijo = input <Persona[]>([]); 
- envioDeAlumno = output<Persona>();
+  listadoHijo = input<Persona[]>([]);
+  envioDeAlumno = output<Persona>();
 
   verDetalle(alumno: Persona) {
     this.envioDeAlumno.emit(alumno);
