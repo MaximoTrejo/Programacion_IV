@@ -4,5 +4,32 @@ npm i -g @nestjs/cli
 //crear nuevo proyecto
 $ nest new clase-10-nest
 
+//iniciar-levantar desarrollo
+nest start --watch
 
+//crear controllers
+nest g controller  controller/usuarios
+
+//crear modules
+nest g module modules/usuario
+
+//crearServicios
+nest g service modules/usuario
+
+//crear resources
+nest g res resources/libro
+REST API
+Y
+
+//para poder usar esto que es para que no traiga datos de mas
+app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true, //elimina propiedades que no esten en el dto
+    }),
+  );
+
+npm install --save class-validator class-transformer
+
+
+//es para que se instale en el cel
 ng add @angular/pwa a lo que preguta SI
