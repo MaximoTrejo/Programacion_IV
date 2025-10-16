@@ -1,0 +1,10 @@
+
+--Anotaciones del profe de la logica que necesita el TP
+https://excalidraw.com/#json=oUWmBwMfiUAKLffEsoy1I,5A1ZyFuDs0pIZ0GBaN2IDA
+
+--paquete que usamos para jwt
+npm i jsonwebtoken
+
+--cookie para los jwt
+$ npm i cookie-parser
+$ npm i -D @types/cookie-parser
